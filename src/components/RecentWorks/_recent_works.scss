@@ -1,0 +1,40 @@
+.recent_works {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  width: 100%;
+
+  margin-bottom: 40px;
+}
+
+.recent_works__title {
+  width: 15%;
+
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  font-size: 22px;
+  color: $accent_1;
+}
+
+.recent_works__decoration {
+  width: 85%;
+  height: 19px;
+
+  background:  url("../../backgrounds/Line_bgr.jpg") center repeat;
+}
+
+.recent_works__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}

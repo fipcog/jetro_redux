@@ -1,0 +1,15 @@
+$default-font: "Helvetica Neue", sans-serif;
+$alt-font: "bebas", "Helvetica Neue", sans-serif;
+$accent_1: #e8603c;
+$accent_2: #f2b19c;
+$text: #454545;
+$alt-text: #ffffff;
+$alt-text_2: #b9b9b9;
+$shading: rgba(50, 50, 50, 0.57);
+
+@mixin alt_selection() {
+  ::selection {
+    background-color: $alt-text;
+    color: $accent_1;
+  }
+}

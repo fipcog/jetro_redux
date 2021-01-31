@@ -1,0 +1,33 @@
+.main {
+  position: relative;
+
+  width: 100%;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    left: -230px;
+    top: 0;
+
+    display: block;
+    width: 220px;
+    height: 60px;
+
+    background-color: $accent_2;
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    right: -230px;
+    top: 0;
+
+    display: block;
+    width: 220px;
+    height: 60px;
+
+    background-color: $accent_2;
+  }
+}

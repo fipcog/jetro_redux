@@ -1,0 +1,16 @@
+.page_title {
+  display: block;
+  width: 100%;
+  height: 60px;
+
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 20px;
+
+  font-size: 30px;
+  color: $alt-text;
+  background-color: $accent_1;
+
+  @include alt_selection;
+  box-sizing: border-box;
+}

@@ -1,0 +1,41 @@
+.btn {
+  display: inline-block;
+
+  width: auto;
+  height: 50px;
+
+  padding: 0 36px;
+
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: $alt-text;
+
+  background-color: $accent_1;
+  border: none;
+  border-radius: 30px;
+  box-sizing: border-box;
+  outline-color: transparent;
+
+  transition: .2s;
+
+  &:hover {
+    cursor: pointer;
+    transition: .2s;
+  }
+
+  &:not(:hover) {
+    transition: .2s;
+  }
+}
+
+.btn[disabled] {
+  background-color: gray;
+  &:hover {
+    cursor: inherit;
+    background-color: gray;
+    color: $alt-text;
+    border: none;
+  }
+}
