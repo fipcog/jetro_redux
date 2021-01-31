@@ -1,0 +1,91 @@
+/*@import "vars";*/
+/*@import "fonts";*/
+/*@import "libs";*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body .error {
+  background-color: $accent_4;
+&::placeholder {
+   color: white;
+ }
+}
+
+::placeholder {
+  color: #666;
+  font-size: 16px;
+}
+
+:focus::placeholder {
+  color: transparent;
+}
+
+::selection {
+  background-color: $accent_4;
+  color: #fff;
+}
+
+body {
+  font-size: 15px;
+  width: 100%;
+  max-width: 1940px;
+  margin: 0 auto;
+  position: relative;
+  line-height: 1.65;
+  font-family: $default-font;
+  overflow-x: hidden;
+  color: $text;
+  background-color: #313131;
+input, textarea {
+  font-family: $default-font;
+  border: #666 1px solid;
+  outline: none;
+&:focus:required:invalid {
+   border-color: red;
+ }
+&:required:valid {
+   border-color: green;
+ }
+}
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 40px;
+
+  font-size: 50px;
+}
+
+@media (max-width: 576px) {
+  h2 {
+    font-size: 37px;
+  }
+}
+
+/*@import "blocks/btn";*/
+/*@import "blocks/header";*/
+/*@import "blocks/main";*/
+/*@import "blocks/about_us";*/
+/*@import "blocks/focus";*/
+/*@import "blocks/video";*/
+/*@import "blocks/portfolio";*/
+/*@import "blocks/team";*/
+/*@import "blocks/statistic";*/
+/*@import "blocks/packages";*/
+/*@import "blocks/subscribe";*/
+/*@import "blocks/message";*/
+/*@import "blocks/footer";*/
+/*@import "blocks/decoration";*/
